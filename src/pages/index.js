@@ -1,15 +1,16 @@
 // Step 1: Import React
 import * as React from 'react'
 import { Link } from 'gatsby'
+import TopNavigationBar from '../components/top_navigation_bar'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <main>
+    <TopNavigationBar>
       <h1>欢迎来到我的Gatsby站点!</h1>
       <p>我正在通过gatsby的教程创建网页.</p>
       <Link to="/about">这里是关于页面</Link>
-    </main>
+    </TopNavigationBar>
   )
 }
 
